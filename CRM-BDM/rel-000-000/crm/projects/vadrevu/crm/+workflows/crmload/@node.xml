@@ -1,0 +1,41 @@
+<workflow:Workflow xmlns:workflow="http://com.informatica.metadata.common.workflow/1" xmlns:imx="http://com.informatica.imx" imx:id="cvt:2tuc86kn4ru3q" firstInstance="U:bAi2T_oqEeeKnUH5VYo--Q" name="CRMLoad">
+  <characteristics>
+    <Characteristic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="ID_1379" xsi:type="workflow:RuntimeWorkflowCharacteristic" loglevel="INFO" />
+  </characteristics>
+  <taskInstances>
+    <TaskInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:bAi2T_oqEeeKnUH5VYo--Q" xsi:type="workflow:TaskInstance" name="Start_Event" task="U:bAi2UvoqEeeKnUH5VYo--Q">
+      <anonymousTask imx:id="U:bAi2UvoqEeeKnUH5VYo--Q" xsi:type="basic:StartTask" name="Start_Event" />
+      <outgoingSequenceFlows>
+        <SequenceFlow imx:id="U:dMyEhvoqEeeKnUH5VYo--Q" xsi:type="workflow:SequenceFlow" fromInstance="U:bAi2T_oqEeeKnUH5VYo--Q" name="Start_Event_to_m_Customer_Incremental_Load_Lab_01" toInstance="U:dMyEd_oqEeeKnUH5VYo--Q" />
+      </outgoingSequenceFlows>
+    </TaskInstance>
+    <TaskInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:bAi2UPoqEeeKnUH5VYo--Q" xsi:type="workflow:TaskInstance" incomingSequenceFlows="U:dMyEefoqEeeKnUH5VYo--Q" name="End_Event" task="U:bAi2UfoqEeeKnUH5VYo--Q">
+      <anonymousTask imx:id="U:bAi2UfoqEeeKnUH5VYo--Q" xsi:type="basic:EndTask" name="End_Event" />
+    </TaskInstance>
+    <TaskInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:dMyEd_oqEeeKnUH5VYo--Q" xsi:type="workflow:TaskInstance" incomingSequenceFlows="U:dMyEhvoqEeeKnUH5VYo--Q" name="m_Customer_Incremental_Load_Lab_01" task="U:dMyEePoqEeeKnUH5VYo--Q">
+      <anonymousTask imx:id="U:dMyEePoqEeeKnUH5VYo--Q" xsi:type="mapping1:MappingTask" name="m_Customer_Incremental_Load_Lab_01" mapping="cvt:1w9dzuqq0qpfz">
+        <mappingTaskConfig imx:id="U:dMyEe_oqEeeKnUH5VYo--Q" xsi:type="mapping1:MappingTaskConfig">
+          <dateFormat imx:id="U:dMyEfPoqEeeKnUH5VYo--Q" xsi:type="property:StringBoxedReceiverObject" value="MM%2FDD%2FYYYY+HH24:MI:SS" />
+          <highPrecisionEnabled imx:id="U:dMyEffoqEeeKnUH5VYo--Q" xsi:type="property:BooleanBoxedReceiverObject" value="true" />
+          <javaClasspath imx:id="U:dMyEfvoqEeeKnUH5VYo--Q" xsi:type="property:StringBoxedReceiverObject" />
+          <optimizationLevel imx:id="U:dMyEf_oqEeeKnUH5VYo--Q" xsi:type="property:IntegerBoxedReceiverObject" value="2" />
+          <overrideTracingLevel imx:id="U:dMyEgPoqEeeKnUH5VYo--Q" xsi:type="property:StringBoxedReceiverObject" value="normal" />
+          <sessionLogFileDirectory imx:id="U:dMyEgfoqEeeKnUH5VYo--Q" xsi:type="property:StringBoxedReceiverObject" isReceiving="true" />
+          <sessionLogFileName imx:id="U:dMyEgvoqEeeKnUH5VYo--Q" xsi:type="property:StringBoxedReceiverObject" value="m_Customer_Incremental_Load_Lab_01" />
+          <sessionLogSaveRunCount imx:id="U:dMyEg_oqEeeKnUH5VYo--Q" xsi:type="property:IntegerBoxedReceiverObject" value="1" />
+          <sessionLogSaveType imx:id="U:dMyEhPoqEeeKnUH5VYo--Q" xsi:type="property:EnumBoxedReceiverObject" value="com.informatica.metadata.common.task.mapping.SessionLogSaveType:TIMESTAMP" />
+          <sortOrder imx:id="U:dMyEhfoqEeeKnUH5VYo--Q" xsi:type="property:StringBoxedReceiverObject" value="binary" />
+        </mappingTaskConfig>
+      </anonymousTask>
+      <inputBindings>
+        <InputBinding imx:id="ID_1380" xsi:type="binding:InputBinding">
+          <input imx:id="U:dMyEevoqEeeKnUH5VYo--Q" xsi:type="binding:BoxedReceiverTaskInput" boxedReceiverObject="U:dMyEgfoqEeeKnUH5VYo--Q" />
+          <value imx:id="ID_1381" xsi:type="value:RollupParameterValue" parameter="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.LogDir" />
+        </InputBinding>
+      </inputBindings>
+      <outgoingSequenceFlows>
+        <SequenceFlow imx:id="U:dMyEefoqEeeKnUH5VYo--Q" xsi:type="workflow:SequenceFlow" fromInstance="U:dMyEd_oqEeeKnUH5VYo--Q" name="m_Customer_Incremental_Load_Lab_01_to_End_Event" toInstance="U:bAi2UPoqEeeKnUH5VYo--Q" />
+      </outgoingSequenceFlows>
+    </TaskInstance>
+  </taskInstances>
+</workflow:Workflow>

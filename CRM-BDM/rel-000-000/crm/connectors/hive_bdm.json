@@ -1,0 +1,64 @@
+[ {
+  "name" : "NAME",
+  "value" : "hive_BDM"
+}, {
+  "name" : "TYPE",
+  "value" : "Connection"
+}, {
+  "name" : "SUBTYPE",
+  "value" : "com.informatica.adapter.Hive.HiveConnectInfo"
+}, {
+  "name" : "USERNAME"
+}, {
+  "name" : "PASSWORD",
+  "type" : "password"
+}, {
+  "name" : "CODEPAGE",
+  "value" : "UTF-8"
+}, {
+  "name" : "CONNECTIONSTRING",
+  "value" : "jdbc:hive2://quickstart.cloudera:10000/default"
+}, {
+  "name" : "ATTRIBUTES",
+  "type" : "wframe",
+  "value" : [ {
+    "name" : "CodePage",
+    "value" : "UTF-8"
+  }, {
+    "name" : "CodePageId",
+    "value" : "106"
+  }, {
+    "name" : "ConnectionPoolMaxIdleTime",
+    "value" : "120"
+  }, {
+    "name" : "ConnectionPoolMinConnections",
+    "value" : "0"
+  }, {
+    "name" : "ConnectionPoolSize",
+    "value" : "15"
+  }, {
+    "name" : "DataAccessConnectString",
+    "value" : "jdbc:hive2://quickstart.cloudera:10000/default"
+  }, {
+    "name" : "EnableConnectionPool",
+    "value" : "0"
+  }, {
+    "name" : "EnableParallelMode",
+    "value" : "false"
+  }, {
+    "name" : "Name",
+    "value" : "hive_BDM"
+  }, {
+    "name" : "PassThruEnabled",
+    "value" : "false"
+  }, {
+    "name" : "Subtype",
+    "value" : "com.informatica.adapter.Hive.HiveConnectInfo"
+  }, {
+    "name" : "Type",
+    "value" : "Connection"
+  }, {
+    "name" : "relationalSourceAndTarget",
+    "value" : "None"
+  } ]
+} ]

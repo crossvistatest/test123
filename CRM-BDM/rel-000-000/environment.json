@@ -1,0 +1,230 @@
+[ {
+  "name" : "CRM",
+  "connection" : "sad://informatica/mrs#ingest",
+  "uid" : "cuid://pfcn41ieo244",
+  "properties" : [ {
+    "name" : "wrapperLabel",
+    "value" : "CRM"
+  } ],
+  "constituents" : [ {
+    "name" : "Connectors",
+    "type" : "informatica/mrs/conns",
+    "uid" : "cuid://32sh4n9k4hdl3",
+    "constituents" : [ {
+      "name" : "Profile",
+      "type" : "informatica/mrs/conns/con",
+      "crc" : "m3zdfw5wvbfk",
+      "uid" : "cuid://1fvahyes89jt4"
+    }, {
+      "name" : "hive_BDM",
+      "type" : "informatica/mrs/conns/con",
+      "crc" : "ex4vesa8d5js",
+      "uid" : "cuid://1amj8qh2erply"
+    }, {
+      "name" : "stockupd",
+      "type" : "informatica/mrs/conns/con",
+      "crc" : "lbc995br9bu7",
+      "uid" : "cuid://1l7wru1cgmia9"
+    }, {
+      "name" : "workflow",
+      "type" : "informatica/mrs/conns/con",
+      "crc" : "t2cbkss2y2tn",
+      "uid" : "cuid://1vlrc1kh2hud1"
+    } ]
+  }, {
+    "name" : "Projects",
+    "type" : "informatica/mrs/prjlist",
+    "uid" : "cuid://kj3tvpcpgpxb",
+    "constituents" : [ {
+      "name" : "Vadrevu",
+      "type" : "informatica/mrs/prjlist/project",
+      "crc" : "-3BHCQZ4EXX5N",
+      "uid" : "cuid://39nvjeixyy1er",
+      "properties" : [ {
+        "name" : "imxid",
+        "value" : "U:zlWI1PonEeesIyk3n_j6lw"
+      } ],
+      "constituents" : [ {
+        "name" : "CRM",
+        "type" : "informatica/mrs/prjlist/project/folder",
+        "uid" : "cuid://23ov8g10ij4za",
+        "properties" : [ {
+          "name" : "imxid",
+          "value" : "U:U_xojvoqEeeKnUH5VYo--Q"
+        } ],
+        "constituents" : [ {
+          "name" : "@Mappings",
+          "type" : "informatica/mrs/prjlist/project/mrh",
+          "uid" : "cuid://2wubrb5ncv2i1",
+          "constituents" : [ {
+            "name" : "m_Customer_Incremental_Load",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "1DQIVWULDVNY5",
+            "uid" : "cuid://1cun4oetongl",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_sLZPoqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "mapping:Mapping"
+            } ]
+          }, {
+            "name" : "m_Customer_Incremental_Load_Lab_01",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "-15MVFJ0VAHAJJ",
+            "uid" : "cuid://1w9dzuqq0qpfz",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_sKufoqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "mapping:Mapping"
+            } ]
+          }, {
+            "name" : "m_Customer_Incremental_Load_Lab_02",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "UW3SDG2MKTCM",
+            "uid" : "cuid://1x93z8utpap8v",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_sJ1_oqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "mapping:Mapping"
+            } ]
+          }, {
+            "name" : "m_Customer_Incremental_Load_Lab_03",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "-27652OHM6WE4",
+            "uid" : "cuid://1xyz7hu2kqf67",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_sI9foqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "mapping:Mapping"
+            } ]
+          }, {
+            "name" : "m_Customer_Initial_Load",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "-192N3JOANIJAO",
+            "uid" : "cuid://ftqilytlr5pa",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_sId_oqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "mapping:Mapping"
+            } ]
+          } ]
+        }, {
+          "name" : "@Physical Data Objects",
+          "type" : "informatica/mrs/prjlist/project/mrh",
+          "uid" : "cuid://2mo1bihdb348o",
+          "constituents" : [ {
+            "name" : "CRM_Customer_Address",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "IO0291MXGSBI",
+            "uid" : "cuid://vptpl4rny4dp",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_sINfoqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "datarecord:Table"
+            } ]
+          }, {
+            "name" : "CRM_Customer_Communication",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "T0VE17ORMAZK",
+            "uid" : "cuid://k14qxn0yae4w",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_sIEfoqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "datarecord:Table"
+            } ]
+          }, {
+            "name" : "CRM_Customer_Demographics",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "-1VW1C5367HD1",
+            "uid" : "cuid://17oarg7flw7hq",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_sIKfoqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "datarecord:Table"
+            } ]
+          }, {
+            "name" : "CRM_Customer_Main",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "1XHTD2JG03325",
+            "uid" : "cuid://2vz6qjampyfjy",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_sIBfoqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "datarecord:Table"
+            } ]
+          }, {
+            "name" : "CRM_HDFS_Customer_Main",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "-953ZD613OHLF",
+            "uid" : "cuid://1jna70kynmacr",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_xnIfoqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "datasource1:FlatByteDataSource"
+            } ]
+          }, {
+            "name" : "CRM_Hive_Customer",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "11KZKAE1J3QQ1",
+            "uid" : "cuid://34ieygm0fpjyh",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_sIGPoqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "datarecord:Table"
+            } ]
+          }, {
+            "name" : "POS_Orders",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "-5E2PJCRG2NVU",
+            "uid" : "cuid://2b0pewon24547",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:U_xm6foqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "datasource1:FlatByteDataSource"
+            } ]
+          } ]
+        }, {
+          "name" : "@Workflows",
+          "type" : "informatica/mrs/prjlist/project/mrh",
+          "uid" : "cuid://etcxskw15qwb",
+          "constituents" : [ {
+            "name" : "CRMLoad",
+            "type" : "informatica/mrs/prjlist/project/mro",
+            "crc" : "-UJCXN1APDFXY",
+            "uid" : "cuid://2tuc86kn4ru3q",
+            "properties" : [ {
+              "name" : "imxid",
+              "value" : "U:bAi2TvoqEeeKnUH5VYo--Q"
+            }, {
+              "name" : "tag",
+              "value" : "workflow:Workflow"
+            } ]
+          } ]
+        } ]
+      } ]
+    } ]
+  } ]
+} ]

@@ -1,0 +1,12 @@
+<datarecord:Table xmlns:datarecord="http://com.informatica.metadata.relational.datarecord/2" xmlns:imx="http://com.informatica.imx" imx:id="cvt:k14qxn0yae4w" connectionType="com.informatica.adapter.infajdbc.InfaJDBCConnectInfo" name="CRM_Customer_Communication" physicalName="CRM_CUSTOMER_COMMUNICATION" primaryKey="U:U_sIF_oqEeeKnUH5VYo--Q">
+  <columns>
+    <Column xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIEvoqEeeKnUH5VYo--Q" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.infajdbc.InfaJDBCTypeSystem.typesystem%2Fdecimal" name="CUST_ID" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fdecimal" precision="15" />
+    <Column xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIE_oqEeeKnUH5VYo--Q" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.infajdbc.InfaJDBCTypeSystem.typesystem%2Fvarchar" name="CUST_EMAIL" odbcPrecision="100" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="100" />
+    <Column xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIFPoqEeeKnUH5VYo--Q" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.infajdbc.InfaJDBCTypeSystem.typesystem%2Fvarchar" name="CUST_PHONE" nullable="true" odbcPrecision="20" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="20" />
+    <Column xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIFfoqEeeKnUH5VYo--Q" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.infajdbc.InfaJDBCTypeSystem.typesystem%2Fvarchar" name="CUST_MOBILE" nullable="true" odbcPrecision="20" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="20" />
+    <Column xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIFvoqEeeKnUH5VYo--Q" xsi:type="datarecord:Column" type="smd:com.informatica.adapter.infajdbc.InfaJDBCTypeSystem.typesystem%2Fvarchar" name="CUST_TWITTER" nullable="true" odbcPrecision="50" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" precision="50" />
+  </columns>
+  <uniqueKeys>
+    <UniqueKey xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIF_oqEeeKnUH5VYo--Q" xsi:type="datarecord:PrimaryKey" columns="U:U_sIEvoqEeeKnUH5VYo--Q U:U_sIE_oqEeeKnUH5VYo--Q" name="Key" />
+  </uniqueKeys>
+</datarecord:Table>

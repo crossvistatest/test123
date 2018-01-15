@@ -1,0 +1,382 @@
+<mapping:Mapping xmlns:mapping="http://com.informatica.metadata.common.mapping/2" xmlns:imx="http://com.informatica.imx" imx:id="cvt:ftqilytlr5pa" name="m_Customer_Initial_Load">
+  <characteristics>
+    <Characteristic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="ID_1866" xsi:type="runtime:RuntimeCharacteristic" maximumRuntimeIntervalPerSource="PT0S" selectedExecutionEnvironmentName="hadoop" stateStore.="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.StateStore">
+      <environments>
+        <ExecutionEnvironment imx:id="ID_1867" xsi:type="hadoop:CADIYarnExecutionEngine">
+          <executionConfig imx:id="ID_1868" xsi:type="hadoop:HadoopExecutionConfig" />
+        </ExecutionEnvironment>
+      </environments>
+      <handlers>
+        <TxHandlerConfig imx:id="ID_1869" xsi:type="source1:SourceTxHandlerConfig" txInstance="U:U_sIefoqEeeKnUH5VYo--Q" selectedAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalReaderDataAdapter" />
+        <TxHandlerConfig imx:id="ID_1870" xsi:type="source1:SourceTxHandlerConfig" txInstance="U:U_sIevoqEeeKnUH5VYo--Q" selectedAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalReaderDataAdapter" />
+      </handlers>
+      <streamingConfig imx:id="ID_1871" xsi:type="runtime:StreamingConfig" batchInterval="PT20S" cacheRefreshInterval="PT1H" />
+    </Characteristic>
+    <Characteristic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="ID_1872" xsi:type="optimizer:OptimizerCharacteristic">
+      <configs>
+        <OptimizerConfig imx:id="ID_1873" xsi:type="pdo:PushdownConfig" />
+      </configs>
+    </Characteristic>
+  </characteristics>
+  <definedLibraries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIePoqEeeKnUH5VYo--Q" xsi:type="typelibrary:TypeLibrary" name="DefinedTypeLibrary" typeSystem="smd:com.informatica.metadata.seed.platform.Platform.typesystem" />
+  <instances>
+    <Instance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIefoqEeeKnUH5VYo--Q" xsi:type="mapping:Instance" name="Read_Cust_Demographics" transformation="U:U_sIf_oqEeeKnUH5VYo--Q">
+      <fromOutlineLinks>
+        <OutlineLink imx:id="ID_1874" xsi:type="mapping:OutlineLink" fromInstance="U:U_sIefoqEeeKnUH5VYo--Q" toInstance="U:U_sIfPoqEeeKnUH5VYo--Q" />
+      </fromOutlineLinks>
+      <ports>
+        <TransformationFieldPort imx:id="ID_1875" xsi:type="mapping:TransformationFieldPort" instance="U:U_sIefoqEeeKnUH5VYo--Q" transformationField="U:U_sI6PoqEeeKnUH5VYo--Q">
+          <children>
+            <NestedPort imx:id="ID_1876" xsi:type="mapping:NestedPort" toPorts="ID_1877" parent="ID_1875" structuralFeature="U:U_sI6_oqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1878" xsi:type="mapping:NestedPort" toPorts="ID_1879" parent="ID_1875" structuralFeature="U:U_sI7PoqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1880" xsi:type="mapping:NestedPort" toPorts="ID_1881" parent="ID_1875" structuralFeature="U:U_sI7foqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1882" xsi:type="mapping:NestedPort" toPorts="ID_1883" parent="ID_1875" structuralFeature="U:U_sI7voqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1884" xsi:type="mapping:NestedPort" toPorts="ID_1885" parent="ID_1875" structuralFeature="U:U_sI7_oqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1886" xsi:type="mapping:NestedPort" toPorts="ID_1887" parent="ID_1875" structuralFeature="U:U_sI8PoqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1888" xsi:type="mapping:NestedPort" toPorts="ID_1889" parent="ID_1875" structuralFeature="U:U_sI8foqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1890" xsi:type="mapping:NestedPort" toPorts="ID_1891" parent="ID_1875" structuralFeature="U:U_sI8voqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1892" xsi:type="mapping:NestedPort" toPorts="ID_1893" parent="ID_1875" structuralFeature="U:U_sI8_oqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1894" xsi:type="mapping:NestedPort" toPorts="ID_1895" parent="ID_1875" structuralFeature="U:U_sI9PoqEeeKnUH5VYo--Q" />
+          </children>
+        </TransformationFieldPort>
+      </ports>
+    </Instance>
+    <Instance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIevoqEeeKnUH5VYo--Q" xsi:type="mapping:Instance" name="Read_Customer" transformation="U:U_sIgPoqEeeKnUH5VYo--Q">
+      <fromOutlineLinks>
+        <OutlineLink imx:id="ID_1896" xsi:type="mapping:OutlineLink" fromInstance="U:U_sIevoqEeeKnUH5VYo--Q" toInstance="U:U_sIe_oqEeeKnUH5VYo--Q" />
+      </fromOutlineLinks>
+      <ports>
+        <TransformationFieldPort imx:id="ID_1897" xsi:type="mapping:TransformationFieldPort" instance="U:U_sIevoqEeeKnUH5VYo--Q" transformationField="U:U_sI2foqEeeKnUH5VYo--Q">
+          <children>
+            <NestedPort imx:id="ID_1898" xsi:type="mapping:NestedPort" toPorts="ID_1899" parent="ID_1897" structuralFeature="U:U_sI3PoqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1900" xsi:type="mapping:NestedPort" toPorts="ID_1901" parent="ID_1897" structuralFeature="U:U_sI3foqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1902" xsi:type="mapping:NestedPort" toPorts="ID_1903" parent="ID_1897" structuralFeature="U:U_sI3voqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1904" xsi:type="mapping:NestedPort" toPorts="ID_1905" parent="ID_1897" structuralFeature="U:U_sI3_oqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1906" xsi:type="mapping:NestedPort" toPorts="ID_1907" parent="ID_1897" structuralFeature="U:U_sI4PoqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1908" xsi:type="mapping:NestedPort" toPorts="ID_1909" parent="ID_1897" structuralFeature="U:U_sI4foqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1910" xsi:type="mapping:NestedPort" toPorts="ID_1911" parent="ID_1897" structuralFeature="U:U_sI4voqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1912" xsi:type="mapping:NestedPort" toPorts="ID_1913" parent="ID_1897" structuralFeature="U:U_sI4_oqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1914" xsi:type="mapping:NestedPort" toPorts="ID_1915" parent="ID_1897" structuralFeature="U:U_sI5PoqEeeKnUH5VYo--Q" />
+            <NestedPort imx:id="ID_1916" xsi:type="mapping:NestedPort" toPorts="ID_1917" parent="ID_1897" structuralFeature="U:U_sI5foqEeeKnUH5VYo--Q" />
+          </children>
+        </TransformationFieldPort>
+      </ports>
+    </Instance>
+    <Instance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIe_oqEeeKnUH5VYo--Q" xsi:type="mapping:Instance" name="fil_Allow_Premium_Customers_Only" toOutlineLinks="ID_1896" transformation="U:U_sIgfoqEeeKnUH5VYo--Q">
+      <fromOutlineLinks>
+        <OutlineLink imx:id="ID_1918" xsi:type="mapping:OutlineLink" fromInstance="U:U_sIe_oqEeeKnUH5VYo--Q" toInstance="U:U_sIfPoqEeeKnUH5VYo--Q" />
+      </fromOutlineLinks>
+      <ports>
+        <TransformationFieldPort imx:id="ID_1899" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1898" toPorts="ID_1919" instance="U:U_sIe_oqEeeKnUH5VYo--Q" transformationField="U:U_sIzfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1901" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1900" toPorts="ID_1920" instance="U:U_sIe_oqEeeKnUH5VYo--Q" transformationField="U:U_sIzvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1903" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1902" toPorts="ID_1921" instance="U:U_sIe_oqEeeKnUH5VYo--Q" transformationField="U:U_sIz_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1905" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1904" toPorts="ID_1922" instance="U:U_sIe_oqEeeKnUH5VYo--Q" transformationField="U:U_sI0PoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1907" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1906" toPorts="ID_1923" instance="U:U_sIe_oqEeeKnUH5VYo--Q" transformationField="U:U_sI0foqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1909" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1908" toPorts="ID_1924" instance="U:U_sIe_oqEeeKnUH5VYo--Q" transformationField="U:U_sI0voqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1911" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1910" toPorts="ID_1925" instance="U:U_sIe_oqEeeKnUH5VYo--Q" transformationField="U:U_sI0_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1913" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1912" toPorts="ID_1926" instance="U:U_sIe_oqEeeKnUH5VYo--Q" transformationField="U:U_sI1PoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1915" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1914" toPorts="ID_1927" instance="U:U_sIe_oqEeeKnUH5VYo--Q" transformationField="U:U_sI1foqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1917" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1916" toPorts="ID_1928" instance="U:U_sIe_oqEeeKnUH5VYo--Q" transformationField="U:U_sI1voqEeeKnUH5VYo--Q" />
+      </ports>
+    </Instance>
+    <Instance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIfPoqEeeKnUH5VYo--Q" xsi:type="mapping:Instance" name="Joiner" toOutlineLinks="ID_1918 ID_1874" transformation="U:U_sIgvoqEeeKnUH5VYo--Q">
+      <fromOutlineLinks>
+        <OutlineLink imx:id="ID_1929" xsi:type="mapping:OutlineLink" fromInstance="U:U_sIfPoqEeeKnUH5VYo--Q" toInstance="U:U_sIffoqEeeKnUH5VYo--Q" />
+      </fromOutlineLinks>
+      <ports>
+        <TransformationFieldPort imx:id="ID_1919" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1899" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIpPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1920" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1901" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIpfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1921" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1903" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIpvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1922" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1905" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIp_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1923" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1907" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIqPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1924" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1909" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIqfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1925" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1911" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIqvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1926" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1913" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIq_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1927" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1915" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIrPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1928" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1917" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIrfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1877" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1876" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIrvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1879" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1878" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIr_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1881" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1880" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIsPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1883" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1882" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIsfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1885" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1884" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIsvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1887" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1886" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIs_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1889" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1888" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sItPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1891" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1890" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sItfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1893" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1892" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sItvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1895" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1894" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIt_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1930" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1931" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIuPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1932" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1933" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIufoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1934" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1935" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIuvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1936" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1937" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIu_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1938" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1939" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIvPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1940" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1941" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIvfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1942" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1943" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIvvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1944" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1945" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIv_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1946" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1947" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIwPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1948" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1949" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIwfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1950" xsi:type="mapping:TransformationFieldPort" toPorts="ID_1951" instance="U:U_sIfPoqEeeKnUH5VYo--Q" transformationField="U:U_sIy_oqEeeKnUH5VYo--Q" />
+      </ports>
+    </Instance>
+    <Instance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIffoqEeeKnUH5VYo--Q" xsi:type="mapping:Instance" name="exp_Pass_thru_1" toOutlineLinks="ID_1929" transformation="U:U_sIg_oqEeeKnUH5VYo--Q">
+      <fromOutlineLinks>
+        <OutlineLink imx:id="ID_1952" xsi:type="mapping:OutlineLink" fromInstance="U:U_sIffoqEeeKnUH5VYo--Q" toInstance="U:U_sIfvoqEeeKnUH5VYo--Q" />
+      </fromOutlineLinks>
+      <ports>
+        <TransformationFieldPort imx:id="ID_1931" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1930" toPorts="ID_1953" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sIlvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1933" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1932" toPorts="ID_1954" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sIl_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1935" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1934" toPorts="ID_1955" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sImPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1937" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1936" toPorts="ID_1956" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sImfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1939" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1938" toPorts="ID_1957" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sImvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1941" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1940" toPorts="ID_1958" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sIm_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1943" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1942" toPorts="ID_1959" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sInPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1945" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1944" toPorts="ID_1960" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sInfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1947" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1946" toPorts="ID_1961" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sInvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1949" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1948" toPorts="ID_1962" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sIn_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1951" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1950" toPorts="ID_1963" instance="U:U_sIffoqEeeKnUH5VYo--Q" transformationField="U:U_sIoPoqEeeKnUH5VYo--Q" />
+      </ports>
+    </Instance>
+    <Instance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIfvoqEeeKnUH5VYo--Q" xsi:type="mapping:Instance" name="exp_Data_Types" toOutlineLinks="ID_1952" transformation="U:U_sIhPoqEeeKnUH5VYo--Q">
+      <ports>
+        <TransformationFieldPort imx:id="ID_1954" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1933" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIiPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1955" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1935" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIifoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1956" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1937" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIivoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1957" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1939" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIi_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1958" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1941" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIjPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1959" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1943" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIjfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1960" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1945" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIjvoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1961" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1947" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIj_oqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1962" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1949" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIkPoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1963" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1951" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIkfoqEeeKnUH5VYo--Q" />
+        <TransformationFieldPort imx:id="ID_1953" xsi:type="mapping:TransformationFieldPort" fromPort="ID_1931" instance="U:U_sIfvoqEeeKnUH5VYo--Q" transformationField="U:U_sIhvoqEeeKnUH5VYo--Q" />
+      </ports>
+    </Instance>
+  </instances>
+  <transformations>
+    <AbstractTransformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIf_oqEeeKnUH5VYo--Q" xsi:type="source:SourceTx" active="true" name="Read_Cust_Demographics" dso="U:U_sI5voqEeeKnUH5VYo--Q">
+      <anonymousDso imx:id="U:U_sI5voqEeeKnUH5VYo--Q" xsi:type="datasourceoperation1:ReadRelationalDataSourceOperation" name="CRM_CUSTOMER_DEMOGRAPHICS" hadoopConnectorArgs="--split-by+CUST_ID" tableDefinitions="cvt:17oarg7flw7hq" typeSystem="smd:com.informatica.adapter.infajdbc.InfaJDBCTypeSystem.typesystem">
+        <defaultConfigs>
+          <DSORuntimeConfig imx:id="U:U_sI6foqEeeKnUH5VYo--Q" xsi:type="dsoconfig1:RelationalDSORuntimeConfig" />
+        </defaultConfigs>
+        <operations>
+          <Capability imx:id="ID_1964" xsi:type="datasourceoperation:ReadCapability" defaultAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalReaderDataAdapter" defaultConfig="U:U_sI6foqEeeKnUH5VYo--Q">
+            <outGroups>
+              <DataAccessGroup imx:id="ID_1965" xsi:type="datasourceoperation:DataAccessGroup" groupType="U:U_sI6voqEeeKnUH5VYo--Q" />
+            </outGroups>
+          </Capability>
+          <Capability imx:id="ID_1966" xsi:type="datasourceoperation:LookupCapability" defaultAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalReaderDataAdapter" defaultConfig="U:U_sI6foqEeeKnUH5VYo--Q" />
+        </operations>
+        <ownedCapabilityTypes>
+          <ComplexType imx:id="U:U_sI6voqEeeKnUH5VYo--Q" xsi:type="typelibrary:ComplexType" name="CRM_CUSTOMER_DEMOGRAPHICS">
+            <features>
+              <StructuralFeature imx:id="U:U_sI6_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="CUST_ID" precision="15" upper="1" />
+              <StructuralFeature imx:id="U:U_sI7PoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CAMEO_CATEGORY_CD" nullable="true" precision="10" upper="1" />
+              <StructuralFeature imx:id="U:U_sI7foqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CAMEO_CATEGORY_DESC" nullable="true" precision="100" upper="1" />
+              <StructuralFeature imx:id="U:U_sI7voqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CAMEO_GROUP_CD" nullable="true" precision="10" upper="1" />
+              <StructuralFeature imx:id="U:U_sI7_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CAMEO_GROUP_DESC" nullable="true" precision="100" upper="1" />
+              <StructuralFeature imx:id="U:U_sI8PoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CAMEO_INTERNATIONAL_CD" nullable="true" precision="10" upper="1" />
+              <StructuralFeature imx:id="U:U_sI8foqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CAMEO_INTERNATIONAL_DESC" nullable="true" precision="100" upper="1" />
+              <StructuralFeature imx:id="U:U_sI8voqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_INCOME_PROFILE" nullable="true" precision="50" upper="1" />
+              <StructuralFeature imx:id="U:U_sI8_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_EDUCATION_LEVEL" nullable="true" precision="50" upper="1" />
+              <StructuralFeature imx:id="U:U_sI9PoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_LANGUAGE" precision="50" upper="1" />
+            </features>
+          </ComplexType>
+        </ownedCapabilityTypes>
+        <relationalFields>
+          <RelationalField imx:id="ID_1967" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIKvoqEeeKnUH5VYo--Q" feature="U:U_sI6_oqEeeKnUH5VYo--Q" name="CUST_ID" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fdecimal" recordInstance="ID_1968" />
+          <RelationalField imx:id="ID_1969" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIK_oqEeeKnUH5VYo--Q" feature="U:U_sI7PoqEeeKnUH5VYo--Q" name="CAMEO_CATEGORY_CD" odbcPrecision="10" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1968" />
+          <RelationalField imx:id="ID_1970" xsi:type="datasourceoperation1:RelationalField" column="U:U_sILPoqEeeKnUH5VYo--Q" feature="U:U_sI7foqEeeKnUH5VYo--Q" name="CAMEO_CATEGORY_DESC" odbcPrecision="100" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1968" />
+          <RelationalField imx:id="ID_1971" xsi:type="datasourceoperation1:RelationalField" column="U:U_sILfoqEeeKnUH5VYo--Q" feature="U:U_sI7voqEeeKnUH5VYo--Q" name="CAMEO_GROUP_CD" odbcPrecision="10" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1968" />
+          <RelationalField imx:id="ID_1972" xsi:type="datasourceoperation1:RelationalField" column="U:U_sILvoqEeeKnUH5VYo--Q" feature="U:U_sI7_oqEeeKnUH5VYo--Q" name="CAMEO_GROUP_DESC" odbcPrecision="100" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1968" />
+          <RelationalField imx:id="ID_1973" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIL_oqEeeKnUH5VYo--Q" feature="U:U_sI8PoqEeeKnUH5VYo--Q" name="CAMEO_INTERNATIONAL_CD" odbcPrecision="10" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1968" />
+          <RelationalField imx:id="ID_1974" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIMPoqEeeKnUH5VYo--Q" feature="U:U_sI8foqEeeKnUH5VYo--Q" name="CAMEO_INTERNATIONAL_DESC" odbcPrecision="100" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1968" />
+          <RelationalField imx:id="ID_1975" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIMfoqEeeKnUH5VYo--Q" feature="U:U_sI8voqEeeKnUH5VYo--Q" name="CUST_INCOME_PROFILE" odbcPrecision="50" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1968" />
+          <RelationalField imx:id="ID_1976" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIMvoqEeeKnUH5VYo--Q" feature="U:U_sI8_oqEeeKnUH5VYo--Q" name="CUST_EDUCATION_LEVEL" odbcPrecision="50" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1968" />
+          <RelationalField imx:id="ID_1977" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIM_oqEeeKnUH5VYo--Q" feature="U:U_sI9PoqEeeKnUH5VYo--Q" name="CUST_LANGUAGE" odbcPrecision="50" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1968" />
+        </relationalFields>
+        <relationalRecordInstances>
+          <RelationalRecordInstance imx:id="ID_1968" xsi:type="datasourceoperation1:RelationalRecordInstance" name="CRM_CUSTOMER_DEMOGRAPHICS" record="cvt:17oarg7flw7hq" />
+        </relationalRecordInstances>
+      </anonymousDso>
+      <sourceInterfaces>
+        <SourceDataInterface imx:id="U:U_sI5_oqEeeKnUH5VYo--Q" xsi:type="source:SourceDataInterface" name="Group" output="true">
+          <sourceFields>
+            <SourceTxField imx:id="U:U_sI6PoqEeeKnUH5VYo--Q" xsi:type="source:SourceTxField" type="U:U_sI6voqEeeKnUH5VYo--Q" name="output" output="true" />
+          </sourceFields>
+        </SourceDataInterface>
+      </sourceInterfaces>
+    </AbstractTransformation>
+    <AbstractTransformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIgPoqEeeKnUH5VYo--Q" xsi:type="source:SourceTx" active="true" name="Read_Customer" dso="U:U_sI1_oqEeeKnUH5VYo--Q">
+      <anonymousDso imx:id="U:U_sI1_oqEeeKnUH5VYo--Q" xsi:type="datasourceoperation1:ReadRelationalDataSourceOperation" name="CRM_CUSTOMER_MAIN" hadoopConnectorArgs="--split-by+CUST_ID" tableDefinitions="cvt:2vz6qjampyfjy" typeSystem="smd:com.informatica.adapter.infajdbc.InfaJDBCTypeSystem.typesystem">
+        <defaultConfigs>
+          <DSORuntimeConfig imx:id="U:U_sI2voqEeeKnUH5VYo--Q" xsi:type="dsoconfig1:RelationalDSORuntimeConfig" />
+        </defaultConfigs>
+        <operations>
+          <Capability imx:id="ID_1978" xsi:type="datasourceoperation:ReadCapability" defaultAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalReaderDataAdapter" defaultConfig="U:U_sI2voqEeeKnUH5VYo--Q">
+            <outGroups>
+              <DataAccessGroup imx:id="ID_1979" xsi:type="datasourceoperation:DataAccessGroup" groupType="U:U_sI2_oqEeeKnUH5VYo--Q" />
+            </outGroups>
+          </Capability>
+          <Capability imx:id="ID_1980" xsi:type="datasourceoperation:LookupCapability" defaultAdapter="smd:com.informatica.metadata.seed.relational.CanonicalRelational.relationalReaderDataAdapter" defaultConfig="U:U_sI2voqEeeKnUH5VYo--Q" />
+        </operations>
+        <ownedCapabilityTypes>
+          <ComplexType imx:id="U:U_sI2_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:ComplexType" name="CRM_CUSTOMER_MAIN">
+            <features>
+              <StructuralFeature imx:id="U:U_sI3PoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="CUST_ID" precision="15" upper="1" />
+              <StructuralFeature imx:id="U:U_sI3foqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_CODE" nullable="true" precision="10" upper="1" />
+              <StructuralFeature imx:id="U:U_sI3voqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_NAME" nullable="true" precision="100" upper="1" />
+              <StructuralFeature imx:id="U:U_sI3_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_FIRSTNAME" nullable="true" precision="100" upper="1" />
+              <StructuralFeature imx:id="U:U_sI4PoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_LASTNAME" nullable="true" precision="100" upper="1" />
+              <StructuralFeature imx:id="U:U_sI4foqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_MIDDLENAME" nullable="true" precision="20" upper="1" />
+              <StructuralFeature imx:id="U:U_sI4voqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_GENDER" nullable="true" precision="10" upper="1" />
+              <StructuralFeature imx:id="U:U_sI4_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_COUNTRY" nullable="true" precision="50" upper="1" />
+              <StructuralFeature imx:id="U:U_sI5PoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_TIER" nullable="true" precision="20" upper="1" />
+              <StructuralFeature imx:id="U:U_sI5foqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" name="CUST_DOB" nullable="true" precision="29" scale="9" upper="1" />
+            </features>
+          </ComplexType>
+        </ownedCapabilityTypes>
+        <relationalFields>
+          <RelationalField imx:id="ID_1981" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIBvoqEeeKnUH5VYo--Q" feature="U:U_sI3PoqEeeKnUH5VYo--Q" name="CUST_ID" odbcPrecision="15" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fdecimal" recordInstance="ID_1982" />
+          <RelationalField imx:id="ID_1983" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIB_oqEeeKnUH5VYo--Q" feature="U:U_sI3foqEeeKnUH5VYo--Q" name="CUST_CODE" odbcPrecision="10" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1982" />
+          <RelationalField imx:id="ID_1984" xsi:type="datasourceoperation1:RelationalField" column="U:U_sICPoqEeeKnUH5VYo--Q" feature="U:U_sI3voqEeeKnUH5VYo--Q" name="CUST_NAME" odbcPrecision="100" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1982" />
+          <RelationalField imx:id="ID_1985" xsi:type="datasourceoperation1:RelationalField" column="U:U_sICfoqEeeKnUH5VYo--Q" feature="U:U_sI3_oqEeeKnUH5VYo--Q" name="CUST_FIRSTNAME" odbcPrecision="100" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1982" />
+          <RelationalField imx:id="ID_1986" xsi:type="datasourceoperation1:RelationalField" column="U:U_sICvoqEeeKnUH5VYo--Q" feature="U:U_sI4PoqEeeKnUH5VYo--Q" name="CUST_LASTNAME" odbcPrecision="100" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1982" />
+          <RelationalField imx:id="ID_1987" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIC_oqEeeKnUH5VYo--Q" feature="U:U_sI4foqEeeKnUH5VYo--Q" name="CUST_MIDDLENAME" odbcPrecision="20" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1982" />
+          <RelationalField imx:id="ID_1988" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIDPoqEeeKnUH5VYo--Q" feature="U:U_sI4voqEeeKnUH5VYo--Q" name="CUST_GENDER" odbcPrecision="10" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1982" />
+          <RelationalField imx:id="ID_1989" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIDfoqEeeKnUH5VYo--Q" feature="U:U_sI4_oqEeeKnUH5VYo--Q" name="CUST_COUNTRY" odbcPrecision="50" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1982" />
+          <RelationalField imx:id="ID_1990" xsi:type="datasourceoperation1:RelationalField" column="U:U_sIDvoqEeeKnUH5VYo--Q" feature="U:U_sI5PoqEeeKnUH5VYo--Q" name="CUST_TIER" odbcPrecision="20" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Fnvarchar" recordInstance="ID_1982" />
+          <RelationalField imx:id="ID_1991" xsi:type="datasourceoperation1:RelationalField" column="U:U_sID_oqEeeKnUH5VYo--Q" feature="U:U_sI5foqEeeKnUH5VYo--Q" name="CUST_DOB" odbcPrecision="29" odbcScale="9" odbcType="smd:com.informatica.metadata.seed.odbc.ODBC.typesystem%2Ftimestamp" recordInstance="ID_1982" />
+        </relationalFields>
+        <relationalRecordInstances>
+          <RelationalRecordInstance imx:id="ID_1982" xsi:type="datasourceoperation1:RelationalRecordInstance" name="CRM_CUSTOMER_MAIN" record="cvt:2vz6qjampyfjy" />
+        </relationalRecordInstances>
+      </anonymousDso>
+      <sourceInterfaces>
+        <SourceDataInterface imx:id="U:U_sI2PoqEeeKnUH5VYo--Q" xsi:type="source:SourceDataInterface" name="Group" output="true">
+          <sourceFields>
+            <SourceTxField imx:id="U:U_sI2foqEeeKnUH5VYo--Q" xsi:type="source:SourceTxField" type="U:U_sI2_oqEeeKnUH5VYo--Q" name="output" output="true" />
+          </sourceFields>
+        </SourceDataInterface>
+      </sourceInterfaces>
+    </AbstractTransformation>
+    <AbstractTransformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIgfoqEeeKnUH5VYo--Q" xsi:type="filter:FilterTx" active="true" name="fil_Allow_Premium_Customers_Only" filterCondition="IN%28CUST_TIER%2C+%27Bronze%27%2C+%27Silver%27%2C+%27Gold%27%2C+%27Diamond%27%2C+%27Platinum%27%2C+%27Emerald%27%2C+0%29">
+      <filterInterface>
+        <FilterDataInterface imx:id="U:U_sIzPoqEeeKnUH5VYo--Q" xsi:type="filter:FilterDataInterface" input="true" name="Group" output="true">
+          <filterFields>
+            <FilterField imx:id="U:U_sIzfoqEeeKnUH5VYo--Q" xsi:type="filter:FilterField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" precision="15" upper="1" input="true" name="CUST_ID" output="true" />
+            <FilterField imx:id="U:U_sIzvoqEeeKnUH5VYo--Q" xsi:type="filter:FilterField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CUST_CODE" output="true" />
+            <FilterField imx:id="U:U_sIz_oqEeeKnUH5VYo--Q" xsi:type="filter:FilterField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_NAME" output="true" />
+            <FilterField imx:id="U:U_sI0PoqEeeKnUH5VYo--Q" xsi:type="filter:FilterField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_FIRSTNAME" output="true" />
+            <FilterField imx:id="U:U_sI0foqEeeKnUH5VYo--Q" xsi:type="filter:FilterField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_LASTNAME" output="true" />
+            <FilterField imx:id="U:U_sI0voqEeeKnUH5VYo--Q" xsi:type="filter:FilterField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" input="true" name="CUST_MIDDLENAME" output="true" />
+            <FilterField imx:id="U:U_sI0_oqEeeKnUH5VYo--Q" xsi:type="filter:FilterField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CUST_GENDER" output="true" />
+            <FilterField imx:id="U:U_sI1PoqEeeKnUH5VYo--Q" xsi:type="filter:FilterField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" input="true" name="CUST_COUNTRY" output="true" />
+            <FilterField imx:id="U:U_sI1foqEeeKnUH5VYo--Q" xsi:type="filter:FilterField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" input="true" name="CUST_TIER" output="true" />
+            <FilterField imx:id="U:U_sI1voqEeeKnUH5VYo--Q" xsi:type="filter:FilterField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" precision="29" scale="9" upper="1" input="true" name="CUST_DOB" output="true" />
+          </filterFields>
+        </FilterDataInterface>
+      </filterInterface>
+    </AbstractTransformation>
+    <AbstractTransformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIgvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerTx" active="true" name="Joiner" cacheDir.="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.CacheDir" caseSensitive="true" detailDataNullHighest="true" joinCondition="CUST_ID+%3D+demo_CUST_ID" masterDataNullHighest="true" scope="allInput">
+      <joinerInterfaces>
+        <JoinerDataInterface imx:id="U:U_sIofoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerDataInterface" name="Output" output="true">
+          <joinerFields>
+            <JoinerField imx:id="U:U_sIuPoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" precision="15" upper="1" name="CUST_ID" output="true" />
+            <JoinerField imx:id="U:U_sIufoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" name="CUST_CODE" output="true" />
+            <JoinerField imx:id="U:U_sIuvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" name="CUST_NAME" output="true" />
+            <JoinerField imx:id="U:U_sIu_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" name="CUST_FIRSTNAME" output="true" />
+            <JoinerField imx:id="U:U_sIvPoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" name="CUST_LASTNAME" output="true" />
+            <JoinerField imx:id="U:U_sIvfoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" name="CUST_MIDDLENAME" output="true" />
+            <JoinerField imx:id="U:U_sIvvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" name="CUST_GENDER" output="true" />
+            <JoinerField imx:id="U:U_sIv_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" name="CUST_COUNTRY" output="true" />
+            <JoinerField imx:id="U:U_sIwPoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" name="CUST_TIER" output="true" />
+            <JoinerField imx:id="U:U_sIwfoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" precision="29" scale="9" upper="1" name="CUST_DOB" output="true" />
+            <JoinerField imx:id="U:U_sIwvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" precision="15" upper="1" name="demo_CUST_ID" output="true" />
+            <JoinerField imx:id="U:U_sIw_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" name="CAMEO_CATEGORY_CD" output="true" />
+            <JoinerField imx:id="U:U_sIxPoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" name="CAMEO_CATEGORY_DESC" output="true" />
+            <JoinerField imx:id="U:U_sIxfoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" name="CAMEO_GROUP_CD" output="true" />
+            <JoinerField imx:id="U:U_sIxvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" name="CAMEO_GROUP_DESC" output="true" />
+            <JoinerField imx:id="U:U_sIx_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" name="CAMEO_INTERNATIONAL_CD" output="true" />
+            <JoinerField imx:id="U:U_sIyPoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" name="CAMEO_INTERNATIONAL_DESC" output="true" />
+            <JoinerField imx:id="U:U_sIyfoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" name="CUST_INCOME_PROFILE" output="true" />
+            <JoinerField imx:id="U:U_sIyvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" name="CUST_EDUCATION_LEVEL" output="true" />
+            <JoinerField imx:id="U:U_sIy_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" name="CUST_LANGUAGE" output="true" />
+          </joinerFields>
+        </JoinerDataInterface>
+        <JoinerDataInterface imx:id="U:U_sIovoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerDataInterface" input="true" name="Detail" detail="true">
+          <joinerFields>
+            <JoinerField imx:id="U:U_sIrvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" precision="15" upper="1" input="true" name="demo_CUST_ID" />
+            <JoinerField imx:id="U:U_sIr_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CAMEO_CATEGORY_CD" />
+            <JoinerField imx:id="U:U_sIsPoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CAMEO_CATEGORY_DESC" />
+            <JoinerField imx:id="U:U_sIsfoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CAMEO_GROUP_CD" />
+            <JoinerField imx:id="U:U_sIsvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CAMEO_GROUP_DESC" />
+            <JoinerField imx:id="U:U_sIs_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CAMEO_INTERNATIONAL_CD" />
+            <JoinerField imx:id="U:U_sItPoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CAMEO_INTERNATIONAL_DESC" />
+            <JoinerField imx:id="U:U_sItfoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" input="true" name="CUST_INCOME_PROFILE" />
+            <JoinerField imx:id="U:U_sItvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" input="true" name="CUST_EDUCATION_LEVEL" />
+            <JoinerField imx:id="U:U_sIt_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" input="true" name="CUST_LANGUAGE" />
+          </joinerFields>
+        </JoinerDataInterface>
+        <JoinerDataInterface imx:id="U:U_sIo_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerDataInterface" input="true" name="Master">
+          <joinerFields>
+            <JoinerField imx:id="U:U_sIpPoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" precision="15" upper="1" input="true" name="CUST_ID" />
+            <JoinerField imx:id="U:U_sIpfoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CUST_CODE" />
+            <JoinerField imx:id="U:U_sIpvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_NAME" />
+            <JoinerField imx:id="U:U_sIp_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_FIRSTNAME" />
+            <JoinerField imx:id="U:U_sIqPoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_LASTNAME" />
+            <JoinerField imx:id="U:U_sIqfoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" input="true" name="CUST_MIDDLENAME" />
+            <JoinerField imx:id="U:U_sIqvoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CUST_GENDER" />
+            <JoinerField imx:id="U:U_sIq_oqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" input="true" name="CUST_COUNTRY" />
+            <JoinerField imx:id="U:U_sIrPoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" input="true" name="CUST_TIER" />
+            <JoinerField imx:id="U:U_sIrfoqEeeKnUH5VYo--Q" xsi:type="joiner:JoinerField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" precision="29" scale="9" upper="1" input="true" name="CUST_DOB" />
+          </joinerFields>
+        </JoinerDataInterface>
+      </joinerInterfaces>
+    </AbstractTransformation>
+    <AbstractTransformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIg_oqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionTx" name="exp_Pass_thru_1">
+      <expressionInterface>
+        <ExpressionDataInterface imx:id="U:U_sIlfoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionDataInterface" input="true" name="Group" output="true">
+          <expressionFields>
+            <ExpressionField imx:id="U:U_sIlvoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" precision="15" upper="1" input="true" name="CUST_ID" output="true" expression="CUST_ID" />
+            <ExpressionField imx:id="U:U_sIl_oqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CUST_CODE" output="true" expression="CUST_CODE" />
+            <ExpressionField imx:id="U:U_sImPoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_NAME" output="true" expression="CUST_NAME" />
+            <ExpressionField imx:id="U:U_sImfoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_FIRSTNAME" output="true" expression="CUST_FIRSTNAME" />
+            <ExpressionField imx:id="U:U_sImvoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_LASTNAME" output="true" expression="CUST_LASTNAME" />
+            <ExpressionField imx:id="U:U_sIm_oqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" input="true" name="CUST_MIDDLENAME" output="true" expression="CUST_MIDDLENAME" />
+            <ExpressionField imx:id="U:U_sInPoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CUST_GENDER" output="true" expression="CUST_GENDER" />
+            <ExpressionField imx:id="U:U_sInfoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" input="true" name="CUST_COUNTRY" output="true" expression="CUST_COUNTRY" />
+            <ExpressionField imx:id="U:U_sInvoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" input="true" name="CUST_TIER" output="true" expression="CUST_TIER" />
+            <ExpressionField imx:id="U:U_sIn_oqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" precision="29" scale="9" upper="1" input="true" name="CUST_DOB" output="true" expression="CUST_DOB" />
+            <ExpressionField imx:id="U:U_sIoPoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" input="true" name="CUST_LANGUAGE" output="true" expression="CUST_LANGUAGE" />
+          </expressionFields>
+        </ExpressionDataInterface>
+      </expressionInterface>
+    </AbstractTransformation>
+    <AbstractTransformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_sIhPoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionTx" name="exp_Data_Types">
+      <expressionInterface>
+        <ExpressionDataInterface imx:id="U:U_sIhfoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionDataInterface" input="true" name="Group" output="true">
+          <expressionFields>
+            <ExpressionField imx:id="U:U_sIhvoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" precision="15" upper="1" input="true" name="in_CUST_ID" />
+            <ExpressionField imx:id="U:U_sIh_oqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" precision="10" upper="1" name="CUST_ID" output="true" expression="TO_Integer%28in_Cust_ID%29">
+              <defaultValue xsi:type="types:StringValue" valueLiteral="ERROR%28%27transformation+error%27%29" />
+            </ExpressionField>
+            <ExpressionField imx:id="U:U_sIiPoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CUST_CODE" output="true" expression="CUST_CODE" />
+            <ExpressionField imx:id="U:U_sIifoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_NAME" output="true" expression="CUST_NAME" />
+            <ExpressionField imx:id="U:U_sIivoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_FIRSTNAME" output="true" expression="CUST_FIRSTNAME" />
+            <ExpressionField imx:id="U:U_sIi_oqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_LASTNAME" output="true" expression="CUST_LASTNAME" />
+            <ExpressionField imx:id="U:U_sIjPoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" input="true" name="CUST_MIDDLENAME" output="true" expression="CUST_MIDDLENAME" />
+            <ExpressionField imx:id="U:U_sIjfoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="10" upper="1" input="true" name="CUST_GENDER" output="true" expression="CUST_GENDER" />
+            <ExpressionField imx:id="U:U_sIjvoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" input="true" name="CUST_COUNTRY" output="true" expression="CUST_COUNTRY" />
+            <ExpressionField imx:id="U:U_sIj_oqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" input="true" name="CUST_TIER" output="true" expression="CUST_TIER" />
+            <ExpressionField imx:id="U:U_sIkPoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" precision="29" scale="9" upper="1" input="true" name="CUST_DOB" output="true" expression="CUST_DOB" />
+            <ExpressionField imx:id="U:U_sIkfoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="50" upper="1" input="true" name="CUST_LANGUAGE" output="true" expression="CUST_LANGUAGE" />
+            <ExpressionField imx:id="U:U_sIkvoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="100" upper="1" input="true" name="CUST_EMAIL" output="true" />
+            <ExpressionField imx:id="U:U_sIk_oqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" precision="20" upper="1" input="true" name="CUST_PHONE" output="true" />
+            <ExpressionField imx:id="U:U_sIlPoqEeeKnUH5VYo--Q" xsi:type="expression:ExpressionField" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" precision="29" scale="9" upper="1" name="Last_Update_Date" output="true" expression="SYSDATE">
+              <defaultValue xsi:type="types:StringValue" valueLiteral="ERROR%28%27transformation+error%27%29" />
+            </ExpressionField>
+          </expressionFields>
+        </ExpressionDataInterface>
+      </expressionInterface>
+    </AbstractTransformation>
+  </transformations>
+</mapping:Mapping>

@@ -1,0 +1,74 @@
+[ {
+  "name" : "NAME",
+  "value" : "stockupd"
+}, {
+  "name" : "TYPE",
+  "value" : "Relational"
+}, {
+  "name" : "SUBTYPE",
+  "value" : "ORACLE"
+}, {
+  "name" : "USERNAME",
+  "value" : "DEV_DBA"
+}, {
+  "name" : "PASSWORD",
+  "type" : "password"
+}, {
+  "name" : "CODEPAGE",
+  "value" : "UTF-8"
+}, {
+  "name" : "CONNECTIONSTRING",
+  "value" : "xe"
+}, {
+  "name" : "ATTRIBUTES",
+  "type" : "wframe",
+  "value" : [ {
+    "name" : "CodePage",
+    "value" : "UTF-8"
+  }, {
+    "name" : "CodePageId",
+    "value" : "106"
+  }, {
+    "name" : "ConnectionPoolMaxIdleTime",
+    "value" : "120"
+  }, {
+    "name" : "ConnectionPoolMinConnections",
+    "value" : "0"
+  }, {
+    "name" : "ConnectionPoolSize",
+    "value" : "15"
+  }, {
+    "name" : "DataAccessConnectString",
+    "value" : "xe"
+  }, {
+    "name" : "EnableConnectionPool",
+    "value" : "1"
+  }, {
+    "name" : "EnableParallelMode",
+    "value" : "false"
+  }, {
+    "name" : "EnableQuotes",
+    "value" : "true"
+  }, {
+    "name" : "MetadataAccessConnectString",
+    "value" : "jdbc:informatica:oracle://localhost:1521;SID=xe"
+  }, {
+    "name" : "Name",
+    "value" : "stockupd"
+  }, {
+    "name" : "PassThruEnabled",
+    "value" : "false"
+  }, {
+    "name" : "Password",
+    "value" : "TzkqFr8af//jP4WvTf1M7Q=="
+  }, {
+    "name" : "Subtype",
+    "value" : "ORACLE"
+  }, {
+    "name" : "Type",
+    "value" : "Relational"
+  }, {
+    "name" : "Username",
+    "value" : "DEV_DBA"
+  } ]
+} ]

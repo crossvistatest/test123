@@ -1,0 +1,74 @@
+[ {
+  "name" : "NAME",
+  "value" : "workflow"
+}, {
+  "name" : "TYPE",
+  "value" : "Relational"
+}, {
+  "name" : "SUBTYPE",
+  "value" : "ORACLE"
+}, {
+  "name" : "USERNAME",
+  "value" : "infa_workflow"
+}, {
+  "name" : "PASSWORD",
+  "type" : "password"
+}, {
+  "name" : "CODEPAGE",
+  "value" : "UTF-8"
+}, {
+  "name" : "CONNECTIONSTRING",
+  "value" : "XE"
+}, {
+  "name" : "ATTRIBUTES",
+  "type" : "wframe",
+  "value" : [ {
+    "name" : "CodePage",
+    "value" : "UTF-8"
+  }, {
+    "name" : "CodePageId",
+    "value" : "106"
+  }, {
+    "name" : "ConnectionPoolMaxIdleTime",
+    "value" : "120"
+  }, {
+    "name" : "ConnectionPoolMinConnections",
+    "value" : "0"
+  }, {
+    "name" : "ConnectionPoolSize",
+    "value" : "15"
+  }, {
+    "name" : "DataAccessConnectString",
+    "value" : "XE"
+  }, {
+    "name" : "EnableConnectionPool",
+    "value" : "1"
+  }, {
+    "name" : "EnableParallelMode",
+    "value" : "false"
+  }, {
+    "name" : "EnableQuotes",
+    "value" : "true"
+  }, {
+    "name" : "MetadataAccessConnectString",
+    "value" : "jdbc:informatica:oracle://CVWINSERVBDM:1521;SID=XE"
+  }, {
+    "name" : "Name",
+    "value" : "workflow"
+  }, {
+    "name" : "PassThruEnabled",
+    "value" : "false"
+  }, {
+    "name" : "Password",
+    "value" : "TzkqFr8af//jP4WvTf1M7Q=="
+  }, {
+    "name" : "Subtype",
+    "value" : "ORACLE"
+  }, {
+    "name" : "Type",
+    "value" : "Relational"
+  }, {
+    "name" : "Username",
+    "value" : "infa_workflow"
+  } ]
+} ]

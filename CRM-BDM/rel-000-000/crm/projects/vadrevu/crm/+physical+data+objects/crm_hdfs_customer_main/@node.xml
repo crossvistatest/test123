@@ -1,0 +1,100 @@
+<datasource1:FlatByteDataSource xmlns:datasource1="http://com.informatica.metadata.flatbyte.datasource/2" xmlns:imx="http://com.informatica.imx" imx:id="cvt:1jna70kynmacr" name="CRM_HDFS_Customer_Main">
+  <fileDefinitions>
+    <FlatByteDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_xnPPoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteDefinition" codePageObject="smd:com.informatica.metadata.seed.platform.CodePages.codepagesystem%2F2252" defaultDateFormat="A++19+YYYY-MM-DD+HH24:MI:SS" defaultDecimalSeparator="." name="FileByteDefinition">
+      <columns>
+        <FlatByteColumn imx:id="U:U_xnPfoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" name="CUST_ID" precision="3" />
+        <FlatByteColumn imx:id="U:U_xnPvoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fnumber" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" name="CUST_CODE" precision="3" />
+        <FlatByteColumn imx:id="U:U_xnP_oqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" name="CUST_NAME" precision="16" />
+        <FlatByteColumn imx:id="U:U_xnQPoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" name="CUST_FIRSTNAME" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnQfoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" name="CUST_LASTNAME" precision="24" />
+        <FlatByteColumn imx:id="U:U_xnQvoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" name="CUST_MIDDLENAME" precision="1" />
+        <FlatByteColumn imx:id="U:U_xnQ_oqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" name="CUST_GENDER" precision="1" />
+        <FlatByteColumn imx:id="U:U_xnRPoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" name="CUST_COUNTRY" precision="13" />
+        <FlatByteColumn imx:id="U:U_xnRfoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" name="CUST_TIER" precision="7" />
+        <FlatByteColumn imx:id="U:U_xnRvoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fdatetime" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" formatString="A+++9+DD-MON-YY" name="CUST_DOB" precision="29" scale="9" />
+      </columns>
+      <recordStrategy imx:id="ID_2034" xsi:type="datarecord1:CharacterDelimitedRecordStrategy" flatByteRecord="U:U_xnPPoqEeeKnUH5VYo--Q" columnDelimiterCharacters="%2C" quotationMarks="%22" />
+    </FlatByteDefinition>
+  </fileDefinitions>
+  <defaultGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_xnIvoqEeeKnUH5VYo--Q" xsi:type="datasourceoperation4:FlatByteGenerateDataSourceOperation" dataSource="cvt:1jna70kynmacr" recordDefinition="U:U_xnPPoqEeeKnUH5VYo--Q">
+    <operations>
+      <Capability imx:id="ID_2035" xsi:type="datasourceoperation:WriteCapability" defaultAdapter="smd:com.informatica.metadata.seed.flatbyte.FlatFile.flatFileGeneratingDataAdapter" defaultConfig="U:U_xnJfoqEeeKnUH5VYo--Q">
+        <inGroups>
+          <DataAccessGroup imx:id="ID_2036" xsi:type="datasourceoperation:DataAccessGroup" groupType="U:U_xnMfoqEeeKnUH5VYo--Q" input="true" />
+        </inGroups>
+      </Capability>
+    </operations>
+    <ownedCapabilityTypes>
+      <ComplexType imx:id="U:U_xnMfoqEeeKnUH5VYo--Q" xsi:type="typelibrary:ComplexType" name="input">
+        <features>
+          <StructuralFeature imx:id="U:U_xnMvoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="CUST_ID" precision="3" upper="1" />
+          <StructuralFeature imx:id="U:U_xnM_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="CUST_CODE" precision="3" upper="1" />
+          <StructuralFeature imx:id="U:U_xnNPoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_NAME" precision="16" upper="1" />
+          <StructuralFeature imx:id="U:U_xnNfoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_FIRSTNAME" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xnNvoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_LASTNAME" precision="24" upper="1" />
+          <StructuralFeature imx:id="U:U_xnN_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_MIDDLENAME" precision="1" upper="1" />
+          <StructuralFeature imx:id="U:U_xnOPoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_GENDER" precision="1" upper="1" />
+          <StructuralFeature imx:id="U:U_xnOfoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_COUNTRY" precision="13" upper="1" />
+          <StructuralFeature imx:id="U:U_xnOvoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_TIER" precision="7" upper="1" />
+          <StructuralFeature imx:id="U:U_xnO_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" name="CUST_DOB" precision="29" scale="9" upper="1" />
+        </features>
+      </ComplexType>
+    </ownedCapabilityTypes>
+    <columnToInterfaceMap>
+      <ColumnFeature imx:id="ID_2037" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnPfoqEeeKnUH5VYo--Q" feature="U:U_xnMvoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2038" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnPvoqEeeKnUH5VYo--Q" feature="U:U_xnM_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2039" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnP_oqEeeKnUH5VYo--Q" feature="U:U_xnNPoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2040" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnQPoqEeeKnUH5VYo--Q" feature="U:U_xnNfoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2041" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnQfoqEeeKnUH5VYo--Q" feature="U:U_xnNvoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2042" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnQvoqEeeKnUH5VYo--Q" feature="U:U_xnN_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2043" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnQ_oqEeeKnUH5VYo--Q" feature="U:U_xnOPoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2044" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnRPoqEeeKnUH5VYo--Q" feature="U:U_xnOfoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2045" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnRfoqEeeKnUH5VYo--Q" feature="U:U_xnOvoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2046" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnRvoqEeeKnUH5VYo--Q" feature="U:U_xnO_oqEeeKnUH5VYo--Q" />
+    </columnToInterfaceMap>
+  </defaultGenerator>
+  <defaultParser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_xnI_oqEeeKnUH5VYo--Q" xsi:type="datasourceoperation2:FlatByteParseDataSourceOperation" dataSource="cvt:1jna70kynmacr" recordDefinition="U:U_xnPPoqEeeKnUH5VYo--Q">
+    <operations>
+      <Capability imx:id="ID_2047" xsi:type="datasourceoperation:ReadCapability" defaultAdapter="smd:com.informatica.metadata.seed.flatbyte.FlatFile.flatFileParsingDataAdapter" defaultConfig="U:U_xnJPoqEeeKnUH5VYo--Q">
+        <outGroups>
+          <DataAccessGroup imx:id="ID_2048" xsi:type="datasourceoperation:DataAccessGroup" groupType="U:U_xnJvoqEeeKnUH5VYo--Q" />
+        </outGroups>
+      </Capability>
+    </operations>
+    <ownedCapabilityTypes>
+      <ComplexType imx:id="U:U_xnJvoqEeeKnUH5VYo--Q" xsi:type="typelibrary:ComplexType" name="output">
+        <features>
+          <StructuralFeature imx:id="U:U_xnJ_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="CUST_ID" precision="3" upper="1" />
+          <StructuralFeature imx:id="U:U_xnKPoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdecimal" lower="1" name="CUST_CODE" precision="3" upper="1" />
+          <StructuralFeature imx:id="U:U_xnKfoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_NAME" precision="16" upper="1" />
+          <StructuralFeature imx:id="U:U_xnKvoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_FIRSTNAME" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xnK_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_LASTNAME" precision="24" upper="1" />
+          <StructuralFeature imx:id="U:U_xnLPoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_MIDDLENAME" precision="1" upper="1" />
+          <StructuralFeature imx:id="U:U_xnLfoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_GENDER" precision="1" upper="1" />
+          <StructuralFeature imx:id="U:U_xnLvoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_COUNTRY" precision="13" upper="1" />
+          <StructuralFeature imx:id="U:U_xnL_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CUST_TIER" precision="7" upper="1" />
+          <StructuralFeature imx:id="U:U_xnMPoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdate%2Ftime" lower="1" name="CUST_DOB" precision="29" scale="9" upper="1" />
+        </features>
+      </ComplexType>
+    </ownedCapabilityTypes>
+    <columnToInterfaceMap>
+      <ColumnFeature imx:id="ID_2049" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnPfoqEeeKnUH5VYo--Q" feature="U:U_xnJ_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2050" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnPvoqEeeKnUH5VYo--Q" feature="U:U_xnKPoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2051" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnP_oqEeeKnUH5VYo--Q" feature="U:U_xnKfoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2052" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnQPoqEeeKnUH5VYo--Q" feature="U:U_xnKvoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2053" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnQfoqEeeKnUH5VYo--Q" feature="U:U_xnK_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2054" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnQvoqEeeKnUH5VYo--Q" feature="U:U_xnLPoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2055" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnQ_oqEeeKnUH5VYo--Q" feature="U:U_xnLfoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2056" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnRPoqEeeKnUH5VYo--Q" feature="U:U_xnLvoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2057" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnRfoqEeeKnUH5VYo--Q" feature="U:U_xnL_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2058" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnRvoqEeeKnUH5VYo--Q" feature="U:U_xnMPoqEeeKnUH5VYo--Q" />
+    </columnToInterfaceMap>
+    <parseStrategy imx:id="ID_2059" xsi:type="datasourceoperation2:CharacterDelimitedParseStrategy" entity="U:U_xnI_oqEeeKnUH5VYo--Q" escapeCharacterRemoved="true" initialRowsSkipped="1" lineBreakCharacter="%5C012" />
+  </defaultParser>
+  <defaultReaderConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_xnJPoqEeeKnUH5VYo--Q" xsi:type="dsoconfig3:FlatbyteReaderConfig" defaultDynFldPrecision="32" defaultDynFldType="string" lineSequentialBufferLength="1024" schemaType="FileHeaderDriven" sourceFileDirectory="%2Fuser%2Fcs_ttt1011%2Finput" sourceFileName="CRM_Customer_Main.txt">
+    <modelExtension imx:id="ID_2060" xsi:type="extension:HDFSFlatbyteExtension" compressionFormat="None" />
+  </defaultReaderConfig>
+  <defaultWriterConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_xnJfoqEeeKnUH5VYo--Q" xsi:type="dsoconfig2:FlatbyteWriterConfig" mergeDirectory.="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.TargetDir" mergeFile="CRM_Customer_Main1.out" targetFileDirectory="%2Fuser%2Fcs_ttt1011%2Foutput%2F" targetFileName="CRM_Customer_Main.txt">
+    <modelExtension imx:id="ID_2061" xsi:type="extension:HDFSFlatbyteExtension" compressionFormat="None" />
+  </defaultWriterConfig>
+</datasource1:FlatByteDataSource>

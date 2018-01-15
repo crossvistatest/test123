@@ -1,0 +1,130 @@
+<datasource1:FlatByteDataSource xmlns:datasource1="http://com.informatica.metadata.flatbyte.datasource/2" xmlns:imx="http://com.informatica.imx" imx:id="cvt:2b0pewon24547" name="POS_Orders">
+  <fileDefinitions>
+    <FlatByteDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_xnEPoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteDefinition" codePageObject="smd:com.informatica.metadata.seed.platform.CodePages.codepagesystem%2F2252" defaultDateFormat="A++19+YYYY-MM-DD+HH24:MI:SS" defaultDecimalSeparator="." name="FileByteDefinition">
+      <columns>
+        <FlatByteColumn imx:id="U:U_xnEfoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fint" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="STORE_ID" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnEvoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fint" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="CUSTOMER_ID" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnE_oqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fint" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="ORDERID" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnFPoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="TERMINAL" precision="64" />
+        <FlatByteColumn imx:id="U:U_xnFfoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fint" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="MERCHANT" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnFvoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fint" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="PERIOD" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnF_oqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="PAYMENT" precision="32" />
+        <FlatByteColumn imx:id="U:U_xnGPoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="CARDNUMBER" precision="32" />
+        <FlatByteColumn imx:id="U:U_xnGfoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fint" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="ORDERDATE" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnGvoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fint" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="POS_TIME" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnG_oqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fdouble" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="TOTALAMOUNTEXVAT" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnHPoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fdouble" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="TOTALAMOUNTVAT" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnHfoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fdouble" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="TOTALAMOUNT" precision="10" />
+        <FlatByteColumn imx:id="U:U_xnHvoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="COUNTRY" precision="64" />
+        <FlatByteColumn imx:id="U:U_xnH_oqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="ORDERTYPE" precision="32" />
+        <FlatByteColumn imx:id="U:U_xnIPoqEeeKnUH5VYo--Q" xsi:type="datarecord1:FlatByteColumn" type="smd:com.informatica.metadata.seed.flatbyte.FlatFileTypeSystem.typesystem%2Fstring" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" name="LOAD_DATE" precision="32" />
+      </columns>
+      <recordStrategy imx:id="ID_1994" xsi:type="datarecord1:CharacterDelimitedRecordStrategy" flatByteRecord="U:U_xnEPoqEeeKnUH5VYo--Q" columnDelimiterCharacters="%7C" quotationMarks="%22" />
+    </FlatByteDefinition>
+  </fileDefinitions>
+  <defaultGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_xm6voqEeeKnUH5VYo--Q" xsi:type="datasourceoperation4:FlatByteGenerateDataSourceOperation" dataSource="cvt:2b0pewon24547" recordDefinition="U:U_xnEPoqEeeKnUH5VYo--Q">
+    <operations>
+      <Capability imx:id="ID_1995" xsi:type="datasourceoperation:WriteCapability" defaultAdapter="smd:com.informatica.metadata.seed.flatbyte.FlatFile.flatFileGeneratingDataAdapter" defaultConfig="U:U_xm7foqEeeKnUH5VYo--Q">
+        <inGroups>
+          <DataAccessGroup imx:id="ID_1996" xsi:type="datasourceoperation:DataAccessGroup" groupType="U:U_xm__oqEeeKnUH5VYo--Q" input="true" />
+        </inGroups>
+      </Capability>
+    </operations>
+    <ownedCapabilityTypes>
+      <ComplexType imx:id="U:U_xm__oqEeeKnUH5VYo--Q" xsi:type="typelibrary:ComplexType" name="input">
+        <features>
+          <StructuralFeature imx:id="U:U_xnAPoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="STORE_ID" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xnAfoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="CUSTOMER_ID" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xnAvoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="ORDERID" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xnA_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="TERMINAL" precision="64" upper="1" />
+          <StructuralFeature imx:id="U:U_xnBPoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="MERCHANT" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xnBfoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="PERIOD" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xnBvoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="PAYMENT" precision="32" upper="1" />
+          <StructuralFeature imx:id="U:U_xnB_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CARDNUMBER" precision="32" upper="1" />
+          <StructuralFeature imx:id="U:U_xnCPoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="ORDERDATE" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xnCfoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="POS_TIME" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xnCvoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" lower="1" name="TOTALAMOUNTEXVAT" precision="15" upper="1" />
+          <StructuralFeature imx:id="U:U_xnC_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" lower="1" name="TOTALAMOUNTVAT" precision="15" upper="1" />
+          <StructuralFeature imx:id="U:U_xnDPoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" lower="1" name="TOTALAMOUNT" precision="15" upper="1" />
+          <StructuralFeature imx:id="U:U_xnDfoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="COUNTRY" precision="64" upper="1" />
+          <StructuralFeature imx:id="U:U_xnDvoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="ORDERTYPE" precision="32" upper="1" />
+          <StructuralFeature imx:id="U:U_xnD_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="LOAD_DATE" precision="32" upper="1" />
+        </features>
+      </ComplexType>
+    </ownedCapabilityTypes>
+    <columnToInterfaceMap>
+      <ColumnFeature imx:id="ID_1997" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnEfoqEeeKnUH5VYo--Q" feature="U:U_xnAPoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_1998" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnFPoqEeeKnUH5VYo--Q" feature="U:U_xnA_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_1999" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnFfoqEeeKnUH5VYo--Q" feature="U:U_xnBPoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2000" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnFvoqEeeKnUH5VYo--Q" feature="U:U_xnBfoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2001" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnE_oqEeeKnUH5VYo--Q" feature="U:U_xnAvoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2002" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnF_oqEeeKnUH5VYo--Q" feature="U:U_xnBvoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2003" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnGPoqEeeKnUH5VYo--Q" feature="U:U_xnB_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2004" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnGfoqEeeKnUH5VYo--Q" feature="U:U_xnCPoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2005" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnGvoqEeeKnUH5VYo--Q" feature="U:U_xnCfoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2006" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnG_oqEeeKnUH5VYo--Q" feature="U:U_xnCvoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2007" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnHPoqEeeKnUH5VYo--Q" feature="U:U_xnC_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2008" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnHfoqEeeKnUH5VYo--Q" feature="U:U_xnDPoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2009" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnHvoqEeeKnUH5VYo--Q" feature="U:U_xnDfoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2010" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnH_oqEeeKnUH5VYo--Q" feature="U:U_xnDvoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2011" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnEvoqEeeKnUH5VYo--Q" feature="U:U_xnAfoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2012" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnIPoqEeeKnUH5VYo--Q" feature="U:U_xnD_oqEeeKnUH5VYo--Q" />
+    </columnToInterfaceMap>
+  </defaultGenerator>
+  <defaultParser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_xm6_oqEeeKnUH5VYo--Q" xsi:type="datasourceoperation2:FlatByteParseDataSourceOperation" dataSource="cvt:2b0pewon24547" recordDefinition="U:U_xnEPoqEeeKnUH5VYo--Q">
+    <operations>
+      <Capability imx:id="ID_2013" xsi:type="datasourceoperation:ReadCapability" defaultAdapter="smd:com.informatica.metadata.seed.flatbyte.FlatFile.flatFileParsingDataAdapter" defaultConfig="U:U_xm7PoqEeeKnUH5VYo--Q">
+        <outGroups>
+          <DataAccessGroup imx:id="ID_2014" xsi:type="datasourceoperation:DataAccessGroup" groupType="U:U_xm7voqEeeKnUH5VYo--Q" />
+        </outGroups>
+      </Capability>
+    </operations>
+    <ownedCapabilityTypes>
+      <ComplexType imx:id="U:U_xm7voqEeeKnUH5VYo--Q" xsi:type="typelibrary:ComplexType" name="output">
+        <features>
+          <StructuralFeature imx:id="U:U_xm7_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="STORE_ID" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xm8PoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="CUSTOMER_ID" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xm8foqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="ORDERID" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xm8voqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="TERMINAL" precision="64" upper="1" />
+          <StructuralFeature imx:id="U:U_xm8_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="MERCHANT" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xm9PoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="PERIOD" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xm9foqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="PAYMENT" precision="32" upper="1" />
+          <StructuralFeature imx:id="U:U_xm9voqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="CARDNUMBER" precision="32" upper="1" />
+          <StructuralFeature imx:id="U:U_xm9_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="ORDERDATE" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xm-PoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Finteger" lower="1" name="POS_TIME" precision="10" upper="1" />
+          <StructuralFeature imx:id="U:U_xm-foqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" lower="1" name="TOTALAMOUNTEXVAT" precision="15" upper="1" />
+          <StructuralFeature imx:id="U:U_xm-voqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" lower="1" name="TOTALAMOUNTVAT" precision="15" upper="1" />
+          <StructuralFeature imx:id="U:U_xm-_oqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fdouble" lower="1" name="TOTALAMOUNT" precision="15" upper="1" />
+          <StructuralFeature imx:id="U:U_xm_PoqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="COUNTRY" precision="64" upper="1" />
+          <StructuralFeature imx:id="U:U_xm_foqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="ORDERTYPE" precision="32" upper="1" />
+          <StructuralFeature imx:id="U:U_xm_voqEeeKnUH5VYo--Q" xsi:type="typelibrary:StructuralFeature" type="smd:com.informatica.metadata.seed.platform.Platform.typesystem%2Fstring" lower="1" name="LOAD_DATE" precision="32" upper="1" />
+        </features>
+      </ComplexType>
+    </ownedCapabilityTypes>
+    <columnToInterfaceMap>
+      <ColumnFeature imx:id="ID_2015" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnEfoqEeeKnUH5VYo--Q" feature="U:U_xm7_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2016" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnFPoqEeeKnUH5VYo--Q" feature="U:U_xm8voqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2017" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnFfoqEeeKnUH5VYo--Q" feature="U:U_xm8_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2018" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnFvoqEeeKnUH5VYo--Q" feature="U:U_xm9PoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2019" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnE_oqEeeKnUH5VYo--Q" feature="U:U_xm8foqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2020" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnF_oqEeeKnUH5VYo--Q" feature="U:U_xm9foqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2021" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnGPoqEeeKnUH5VYo--Q" feature="U:U_xm9voqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2022" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnGfoqEeeKnUH5VYo--Q" feature="U:U_xm9_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2023" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnGvoqEeeKnUH5VYo--Q" feature="U:U_xm-PoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2024" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnG_oqEeeKnUH5VYo--Q" feature="U:U_xm-foqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2025" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnHPoqEeeKnUH5VYo--Q" feature="U:U_xm-voqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2026" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnHfoqEeeKnUH5VYo--Q" feature="U:U_xm-_oqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2027" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnHvoqEeeKnUH5VYo--Q" feature="U:U_xm_PoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2028" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnH_oqEeeKnUH5VYo--Q" feature="U:U_xm_foqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2029" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnEvoqEeeKnUH5VYo--Q" feature="U:U_xm8PoqEeeKnUH5VYo--Q" />
+      <ColumnFeature imx:id="ID_2030" xsi:type="datasourceoperation3:ColumnFeature" column="U:U_xnIPoqEeeKnUH5VYo--Q" feature="U:U_xm_voqEeeKnUH5VYo--Q" />
+    </columnToInterfaceMap>
+    <parseStrategy imx:id="ID_2031" xsi:type="datasourceoperation2:CharacterDelimitedParseStrategy" entity="U:U_xm6_oqEeeKnUH5VYo--Q" escapeCharacterRemoved="true" lineBreakCharacter="%5C012" />
+  </defaultParser>
+  <defaultReaderConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_xm7PoqEeeKnUH5VYo--Q" xsi:type="dsoconfig3:FlatbyteReaderConfig" defaultDynFldPrecision="10" defaultDynFldType="string" lineSequentialBufferLength="1024" schemaType="DataDriven" sourceFileDirectory="%2Fuser%2Facme%2Fpos" sourceFileName="hdfs_acme_orders.out">
+    <modelExtension imx:id="ID_2032" xsi:type="extension:HDFSFlatbyteExtension" compressionFormat="None" />
+  </defaultReaderConfig>
+  <defaultWriterConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" imx:id="U:U_xm7foqEeeKnUH5VYo--Q" xsi:type="dsoconfig2:FlatbyteWriterConfig" mergeDirectory.="smd:com.informatica.metadata.common.parameter.util.InfaParameterSeed.TargetDir" mergeFile="HDFS_ACME_Orders1.out" targetFileDirectory="%2Fuser%2Facme%2Fpos%2F" targetFileName="hdfs_acme_orders.out">
+    <modelExtension imx:id="ID_2033" xsi:type="extension:HDFSFlatbyteExtension" compressionFormat="None" />
+  </defaultWriterConfig>
+</datasource1:FlatByteDataSource>
