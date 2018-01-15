@@ -1,1 +1,8 @@
-[ ]
+[ {
+  "id" : 4460643816747769852,
+  "name" : "moveToQA",
+  "author" : "Administrator",
+  "lastUpdate" : 1516047120270,
+  "targetRepo" : "TEST",
+  "rules" : [ ]
+} ]
