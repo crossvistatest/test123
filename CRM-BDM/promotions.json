@@ -1,0 +1,8 @@
+[ {
+  "id" : 1521739424252463923,
+  "name" : "moveToQA",
+  "author" : "Administrator",
+  "lastUpdate" : 1516047087691,
+  "targetRepo" : "GIT_DEV",
+  "rules" : [ ]
+} ]
